@@ -47,7 +47,8 @@
     "phpunit/phpunit": "^9.5"
   },
   "scripts": {
-    "psalm": "psalm --diff --diff-methods"
+    "psalm": "psalm --diff --diff-methods",
+    "test": "vendor/bin/phpunit"
   },
   "minimum-stability": "stable",
   "prefer-stable": true
