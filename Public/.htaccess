@@ -1,0 +1,10 @@
+Header setifempty X-Frame-Options "SAMEORIGIN"
+Header setifempty Referrer-Policy "strict-origin-when-cross-origin"
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+
+RewriteRule .* - [e=HTTP_AUTHORIZATION:%{HTTP:Authorization}]

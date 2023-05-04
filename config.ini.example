@@ -1,0 +1,37 @@
+[main]
+domain = "localhost"
+domain_scheme = "http://"
+origin = "localhost"
+failsafe_uri = "http://localhost"
+production = false
+logging = true
+debug = true
+
+[security]
+secret = ""
+
+[pdo]
+driver = ""
+host = ""
+database = ""
+username = ""
+password = ""
+
+[mail]
+enabled = false
+driver = "smtp"
+host = "localhost"
+port = "25"
+username = ""
+password = ""
+system_email = "no-reply@localhost"
+
+[log_levels]
+emergency = true
+alert = true
+critical = true
+error = true
+warning = true
+notice = true
+info = true
+debug = true

@@ -1,0 +1,54 @@
+{
+  "name": "robinlahtinen/cashew",
+  "description": "Modern and simple framework.",
+  "type": "project",
+  "keywords": [
+    "framework",
+    "cashew"
+  ],
+  "homepage": "https://github.com/robinlahtinen/cashew",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Robin Lahtinen",
+      "email": "robin.lahtinen@gmail.com",
+      "role": "Lead developer"
+    }
+  ],
+  "support": {
+    "email": "robin.lahtinen@gmail.com"
+  },
+  "config": {
+    "allow-plugins": {
+      "robinlahtinen/*": true,
+      "vimeo/psalm": true,
+      "phpunit/phpunit": true,
+      "php-http/discovery": true
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Cashew\\": "Cashew/"
+    }
+  },
+  "require": {
+    "ext-pdo": "*",
+    "ext-json": "*",
+    "twig/twig": "^3.0",
+    "voku/html-min": "^4.4",
+    "nesbot/carbon": "^2.42",
+    "lcobucci/jwt": "^4.1",
+    "webonyx/graphql-php": "^14.9",
+    "ext-curl": "*",
+    "symfony/mailer": "^6.2"
+  },
+  "require-dev": {
+    "vimeo/psalm": "^3.12",
+    "phpunit/phpunit": "^9.5"
+  },
+  "scripts": {
+    "psalm": "psalm --diff --diff-methods"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}

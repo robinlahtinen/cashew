@@ -1,0 +1,31 @@
+<style>
+    .debugbar {
+        font-family: system-ui;
+        display: flex;
+        flex-flow: wrap;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background: #00000014;
+        padding: .25rem .75rem;
+        opacity: .75;
+        font-size: .75rem;
+        pointer-events: none;
+        user-select: none;
+    }
+
+    .debugbar p {
+        margin: 0 .5rem 0 0;
+    }
+</style>
+<div id="{{ id }}" class="debugbar">
+    <p><strong>DEBUG.{% if production is same as(true) %} <span style="color:red">(PRODUCTION)</span>{% endif %}
+        </strong></p>
+    <p>Cashew: {{ version }}</p>
+    <p>PHP: {{ phpVersion }}</p>
+    <p>Execution time: {{ executionTime }} seconds</p>
+    {% if user is defined %}
+        <p>User: {{ user }}</p>
+    {% endif %}
+</div>
