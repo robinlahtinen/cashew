@@ -7,6 +7,7 @@
     <a href="https://github.com/robinlahtinen/cashew/issues">Report bug</a>
     <br />
     <br />
+    <a href="https://github.com/robinlahtinen/cashew/actions"><img alt="GitHub repository checks state" src="https://badgen.net/github/checks/robinlahtinen/cashew"></a>
     <a href="https://github.com/robinlahtinen/cashew/blob/main/LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/robinlahtinen/cashew"></a>
 </p>
 </div>
